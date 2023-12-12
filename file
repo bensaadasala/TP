@@ -11,7 +11,7 @@ pipeline {
    
         stage('Build') {
             steps {
-                echo 'dev'
+                echo 'build'
             }
         }
    
@@ -26,6 +26,11 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'mise en production'
+            }
+        }
+stage('Release') {
+            steps {
+                echo 'Release'
             }
         }
     }
